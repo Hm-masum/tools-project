@@ -9,7 +9,7 @@ const Drawing = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axiosCommon(`/category/1000`);
+            const { data } = await axiosCommon(`/category/1005`);
             setProducts(data.data)
         }
         getData()

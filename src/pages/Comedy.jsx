@@ -9,7 +9,7 @@ const Comedy = () => {
 
     useEffect(() => {
         const getData = async () => {
-            const { data } = await axiosCommon(`/category/1000`);
+            const { data } = await axiosCommon(`/category/1003`);
             setProducts(data.data)
         }
         getData()
@@ -17,7 +17,7 @@ const Comedy = () => {
 
     return (
         <div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {products.map((product) => (
                     <ProductCard
                         key={product._id}
