@@ -7,12 +7,17 @@ import toast from "react-hot-toast";
 const Music = () => {
     const [products, setProducts] = useState([])
     const axiosCommon = useAxiosCommon();
+    let val=0;
 
     useEffect(() => {
+
         const getData = async () => {
             const { data } = await axiosCommon(`/category/1001`);
             setProducts(data.data)
-            toast.error('Music is haram')
+            if(val==0){
+                toast.error('Music is completely haram. plese ignore this')
+                val++;
+            }
         }
         getData()
     }, [axiosCommon])
