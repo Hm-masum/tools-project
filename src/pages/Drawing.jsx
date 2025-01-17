@@ -3,7 +3,7 @@ import useAxiosCommon from "../hooks/useAxiosCommon";
 import ProductCard from "../component/ProductCard";
 
 
-const Home = () => {
+const Drawing = () => {
     const [products, setProducts] = useState([])
     const axiosCommon = useAxiosCommon();
 
@@ -15,12 +15,8 @@ const Home = () => {
         getData()
     }, [axiosCommon])
 
-
-
-
     return (
         <div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {products.map((product) => (
                     <ProductCard
@@ -32,5 +28,4 @@ const Home = () => {
         </div>
     );
 };
-
-export default Home;
+export default Drawing;
