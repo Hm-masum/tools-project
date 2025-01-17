@@ -9,6 +9,7 @@ const Navbar = () => {
                 <button className='bg-slate-200   font-semibold btn'>sort by view</button>
                 <button className='bg-red-500 text-white font-semibold btn' >Blog</button> 
             </div>
+            <h1 className='border border-b-2 border-slate-400  m-6 text-center'></h1>
             <div>
                 <div className="navbar-center hidden lg:flex justify-center">
                     <ul className="menu menu-horizontal px-1 gap-5">
